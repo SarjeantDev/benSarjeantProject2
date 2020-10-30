@@ -5,24 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <!-- Google Fonts - JosefinSans & Barlow -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- End of Google Fonts -->
+    
+    <!-- Font Awesome Fonts -->
+    <script src="https://kit.fontawesome.com/e8e5081168.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
+
+<header class="headerBlog">
+    <div class="wrapper">
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="./blog/index.html">Blog</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="../index.html">About</a></li>
+                <li><a href="" class="navCurrentPage">Blog</a></li>
                 <li><a href="./contact/index.html">Contact</a></li>
             </ul>
         </nav>
-        <h1>hello i am the header for the blog</h1>
-    </header>
-    <main>
-        <h2>hello i am the main for the blog</h2>
-    </main>
-    <footer>
-        <p>hello i am the footer for the blog</p>
-    </footer>
+        <h1>Blog</h1>
+    </div>
+</header>
+
+
+<main>
+    <section class="blogSideBar">
+        <div class="blodSideBarImg">
+            <img src="../assets/blog-side-image.jpg" alt="">
+        </div>
+        <div class="blogSideBarContent">
+            <h3>Featured Restaurants</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nam earum hic ducimus porro fugiat?</p>
+            <h3>Recent Posts</h3>
+            <ul class=blogSideBarList>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>consectetur adipisicing elit </li>
+                <li>quae deserunt rem nostrum odit</li>
+                <li>inventore quam assumenda est</li>
+            </ul>
+        </div>
+        <!-- END OF CONTENT DIV -->
+    </section>
+    <!-- END OF BLOG SIDE BAR -->
+
+
+    <section class="blogContent">
+        <div class="blogContentImg">
+            <img class="blogHomeImg" src="../assets/blog-post-image.jpg" alt="waiter setting table">
+        </div>
+        <h2>Employment Opportunities</h4>
+        <p>Monday October 30, 2020 by Sarjeant</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti nesciunt. Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaque a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti nesciunt.
+            Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaque a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti nesciunt.
+            Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaque a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti nesciunt.
+            Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaque a.</p>
+
+        <div class="blogComments">
+            <h3>Comments:</h3>
+            <ul>
+                <li>
+                    <img src="../assets/comment-1.jpg" alt="alis head shot">
+                    <h5>Tuesday Novemeber 1st, 2020 by Ali</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis, animi, praesentium, beatae sapiente qui ab quis ad expedita aspernatur aliquid eius mollitia repellendus iure aut tempora consequuntur laboriosam. Blanditiis?</p>
+                </li>
+
+                <li>
+                    <img src="../assets/comment-2.jpg" alt="lisas head shot">
+                    <h5>Tuesday Novemeber 2nd, 2020 by Lisa</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus voluptate veritatis soluta nobis vel, tenetur, nam, magnam numquam facere atque excepturi ullam quia eius. Exercitationem voluptas possimus similique totam.</p>
+                </li>
+            </ul>
+
+            <!-- FORM NEEDED HERE -->
+            <!-- need to learn more -->
+            <form action="submit" class="wrapper">
+
+                <label for="email" class="visuallyHidden">Email</label>
+                <input type="email" name="email" required="true" class="email" placeholder="Email">
+            
+                <label for="confirmEmail" class="visuallyHidden">Email</label>
+                <input type="email" name="confirmEmail" required="true" id="confirmEmail" placeholder="Confirm email">
+            
+                <label for="password" class="visuallyHidden">Email</label>
+                <input type="password" name="password" required="true" id="password" placeholder="Password">
+            
+                <label for="name" class="visuallyHidden">Email</label>
+                <input type="text" name="name" required="true" id="name" placeholder="What should we call you?">
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Copyright 2020 Juno College</p>
+</footer>
 </body>
 </html>

@@ -1,0 +1,26 @@
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    padding: 75px 0;
+    text-align: center;
+}
+
+nav a {
+    font-size: 2rem;
+    line-height: 2.9rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: $colorYellow;
+    transition: all 0.5s;
+}
+
+.navCurrentPage {
+    box-shadow: 0 21px 0 -18px $colorYellow;
+}

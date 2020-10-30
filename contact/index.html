@@ -5,24 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <!-- Google Fonts - JosefinSans & Barlow -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- End of Google Fonts -->
+    
+    <!-- Font Awesome Fonts -->
+    <script src="https://kit.fontawesome.com/e8e5081168.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
+
+    
+<header class="headerContact">
+    <div class="wrapper">
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="./blog/index.html">Blog</a></li>
-                <li><a href="./contact/index.html">Contact</a></li>
+                <li><a href= "#" class="navCurrentPage">Contact</a></li>
             </ul>
         </nav>
-        <h1>hello i am the header for the contact us</h1>
-    </header>
-    <main>
-        <h2>hello i am the main for the contact us</h2>
-    </main>
-    <footer>
-        <p>hello i am the footer for the contact us</p>
-    </footer>
+        <h1>Get in touch</h1>
+    </div>
+</header>
+
+
+<main>
+
+    <section class="infoSocials">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-whatsapp"></i></a>
+
+        <p>info@email.com</p>
+        <p>123-456-7890</p>
+        <p>123 Queen Street WEst, Unit 10</p>
+        <p>Toronto, Ontario</p>
+        <p>M6V2D5</p>
+    </section>
+
+    <section class="contactForm">     
+        <form action="submit">
+            <fieldset>
+                <label for="name" class="srOnly">Name</label>
+                <input type="name" name="" id="" placeholder="Name">
+                
+                <label for="email" class="srOnly">Email</label>
+                <input type="email" name="" id="" placeholder="Email address">
+                
+                <label for="message" class="srOnly">Message</label>
+                <input type="text" name="" id="" cols=10 rows=10 placeholder="Comment">
+                
+                <button type="button" value="Post Comment">Subscribe</button>
+            </fieldset>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>Copyright 2020 Juno College</p>
+</footer>
+
 </body>
 </html>
