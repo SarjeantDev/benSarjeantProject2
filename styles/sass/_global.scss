@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, button, nav, .button {
     text-transform: uppercase;
 }
 
-p {
+p, form, .blogSideBarList li {
     font-family: $fontBarlow;
     font-weight: 400;
     font-size: 2rem;
