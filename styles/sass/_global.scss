@@ -1,23 +1,3 @@
-// FONTS
-// font-family: 'Josefin Sans', sans-serif;
-// font-family: 'Barlow', sans-serif;
-
-// COLORS 
-// sunflower yellow --> color: #FFD300; rgb(255,211,0);
-// white            --> color: white;
-// almost black     --> color: #171B0E; rgb(23, 27, 14);
-// pine             --> color: #2b331b; rgb(43, 51, 27);
-// black            --> color: #0F0F0F; rgb(15, 15, 15);
-
-$fontJose: 'Josefin Sans', sans-serif;
-$fontBarlow: 'Barlow', sans-serif;
-
-$colorYellow: #FFD300;
-$colorWhite: white;
-$colorAlmstBlck: #171B0E;
-$colorPine: #2B331B;
-$colorBlack: #0F0F0F;
-
 * {
     margin: 0;
     padding: 0;
@@ -25,10 +5,11 @@ $colorBlack: #0F0F0F;
 
 li {
     list-style: none;   
-    a {
-        text-decoration: none;
-        color:inherit;
-    }
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
 }
 
 html {
@@ -36,7 +17,7 @@ html {
     color: $colorWhite;
 }
 
-h1, h2, h3, h4, h5, h6, button, nav {
+h1, h2, h3, h4, h5, h6, button, nav, .button {
     font-family: $fontJose;
     margin: 0;
     padding: 0;
@@ -49,12 +30,19 @@ p {
     font-size: 2rem;
     line-height: 2.8rem;
     letter-spacing: 1px;
+    padding-bottom: 35px
 }
 
 .wrapper {
     max-width: 1400px;
     width: 98%;
     margin: 0 auto;
+}
+
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* global header styles */
@@ -66,9 +54,18 @@ header {
 }
 
 .imgBoxShadowRight {
-    box-shadow: 20px 20px $colorYellow;;
+    @include imgBoxShadow(20px);
 }
 
 .imgBoxShadowLeft {
-    box-shadow: -20px 20px $colorYellow;;
+    @include imgBoxShadow(-20px)
+}
+
+.button {
+    @include button()
+}
+.button:hover {
+    color: $colorWhite;
+    background-color: $colorBlack;
+    transition: all 0.3s;
 }

@@ -1,0 +1,35 @@
+// FONTS
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Barlow', sans-serif;
+
+$fontJose: 'Josefin Sans', sans-serif;
+$fontBarlow: 'Barlow', sans-serif;
+
+h1 {
+    font-size: 6.9rem;
+    font-weight: 600;
+    width: 20%;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    width: 100%;
+}
+
+h3 {
+    font-size: 4.5rem;
+    line-height: 9.8rem;
+    font-weight: 400;
+    color: $colorYellow;
+    width: 100%;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 5.8rem;
+    letter-spacing: 1px;
+    padding-top: 70px;
+}

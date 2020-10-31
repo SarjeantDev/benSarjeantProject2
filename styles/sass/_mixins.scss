@@ -1,4 +1,16 @@
-@mixin buttons($padding: 10px, $color: $colorYellow) {
+@mixin imgBoxShadow($offX, $offY: 20px, $color: $colorYellow) {
+    box-shadow: $offX $offY $color;
+}
+
+@mixin button(
+        $backColor: $colorYellow, 
+        $fontColor: $colorAlmstBlck, 
+        $padding: 16px 16px 10px 16px,
+        $fontSize: 22.4px,
+        $textAlign: center ){
+    background-color: $backColor;
+    color: $fontColor;
     padding: $padding;
-    background-color: $color;
-}   
+    font-size: $fontSize;
+    text-align: $textAlign;
+}

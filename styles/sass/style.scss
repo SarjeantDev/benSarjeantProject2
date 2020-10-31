@@ -1,9 +1,12 @@
 @import 'setup';
-@import 'global';
+@import 'colors';
+@import 'typography';
 @import 'mixins';
+@import 'global';
 @import 'forms';
 @import 'nav';
 @import 'footer';
+
 
 /* Page Imports */
 @import 'pgHome';
