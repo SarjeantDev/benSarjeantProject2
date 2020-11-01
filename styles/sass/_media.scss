@@ -1,5 +1,207 @@
-@media (max-width: 800px) {
-    .gridContainer {
-        grid-template-columns: 100%;
+// MEDIA QUERY STYLES
+// START OF MEDIA QUERY FOR MOBILE STYLING (500PX AND BELOW)
+@media (max-width: 500px) {
+    // SIDE NAVIGATION 
+    .sideMenu {
+        flex-direction: column;
+        position: fixed;
+        z-index: 10;
+        width: 30%;
+        right: -30%;
+        transition: all 0.5s;
+        background-color: rgba($color: $colorWhite, $alpha: 0.2);
+        li {
+            padding: 20px 0;
+            text-align: right;
+        }
+    }
+
+    // MAKING HAMBURGER VISIBLE
+    label[for="toggle"] {
+        z-index: 10;
+    }
+
+    .mainHomeImg {
+        display: flex;
+        text-align: right;
+        img {   
+            height: auto;
+            align-self: flex-end;
+        }
+    }
+
+    // SHRINKING MAIN HEADER TEXT
+    h1 {
+        font-size: 4rem;
+        padding: 20px 0 0 20px;
+        .mainHeadSpan {
+            padding-top: 10px;
+        }
+    }
+
+    // MAKING GALLERY ON HOME PAGE SHRINK TO ONE COLUMN
+    .gallerySection {
+        .wrapper {
+            padding: 0;
+        }
+        .gridContainer {
+                grid-template-columns: repeat(1, 1fr);
+        }
+        li {
+            padding: 40px;
+        }
     }
 }
+// END OF MEDIA QUERY FOR MOBILE STYLING
+
+
+// START OF MEDIA QUERY (850PX)
+@media (max-width: 850px) {
+    // HOME PAGE MEDIA 
+    .mainHomeImg {
+        height: 500px;
+        img {
+            width: 100%;
+        }
+    }
+
+    // INFORMATION SECTION ON HOME PAGE SHRINKING TO A SINGLE COLUMN
+    .informationSec .gridContainer {
+        padding-top: 200px;
+        grid-template-columns: repeat(1, 1fr);
+        h2, p {
+            width: 95%;
+            padding-left: 20px;
+            padding-top: 0;
+        }
+    } 
+
+    // BLOG SECTION ON HOME PAGE SHRINKING TO A SINGLE COLUMN
+    .blogSection .gridContainer {
+        padding-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        h5 {
+            padding-top: 0;
+            font-size: 3.3rem;
+        }
+        .gridItem2, .gridItem3 {
+            padding-right: 20px;
+            padding-left: 20px;
+        }   
+        p {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    .contestSection h3 {
+        font-size: 3.5rem;
+    }
+
+    // ARTICLE SECTION ON HOME PAGE SHRINKING TO A SINGLE COLUMN
+    // AND CENTER ALIGNING CONTENT
+    .articleSection .flexContainer {
+        flex-direction: column;
+        text-align: center;
+        .articleImg {
+            width: 50%;
+        }
+        h3 {
+            padding-top: 50px;
+            font-size: 3.5rem;
+        }
+        .articleContent {
+            text-align: center;
+        }
+    }
+    
+    // MAKING FORM SHRINK DOWN TO A SINGLE COLUMN 
+    form {
+        grid-template-rows: 50px 50px 200px;
+        grid-template-columns: auto;
+        #name {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+        #email {
+            grid-column: 1 / span 2;
+            grid-row: 2;
+        }
+        #message {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+        .formSubmit {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+    }
+}
+// END OF 850PX MEDIA QUERY
+
+// START OF MEDIA QUERY (1050PX)
+@media (max-width: 1050px) {
+    // CONTACT US PAGE MEDIA 
+    .flexContainerSocials {
+        flex-direction: column;
+        .contactForm {
+            margin: 200px auto 0;
+            width: 90%;
+            right: 0;
+        }
+        .infoSocials {
+            margin: 0 auto;
+            width: 90%;
+            text-align: center;
+        }
+        .infoSocialIcons {
+            margin: 0 auto;
+            justify-content: center;
+        }
+    }         
+}
+// END OF MEDIA QUERY (1050PX)
+
+
+// START OF MEDIA QUERY (1150PX)
+@media (max-width: 1150px) {
+    // BLOG PAGE MEDIA TO SINGLE COLUMN
+    .blogGridContainer {
+       grid-template-columns: repeat(1, 1fr); 
+
+       // BLOG SIDE BAR STYLES
+       .blogSideBar {
+            margin-bottom: 150px;
+            .blogSideBarContent {
+                margin: 0 auto;
+                margin-bottom: 40px;
+            }
+            .blogSideBarImg {
+                text-align: center;
+                padding-bottom: 40px;
+                img {
+                    box-shadow: none;
+                }
+            }
+        }
+        // END OF BLOG SIDE BAR
+
+       // BLOG CONTENT & COMMENTS
+       .blogContent {
+            grid-column: 1;
+            grid-row: 2;
+            .blogContentImg {
+                text-align: center;
+            }
+            .blogComments {
+                padding: 0 40px;
+                .blogCommentImg {
+                    text-align: center;
+                }
+            }  
+       }
+       // END OF BLOG CONTENT
+    }
+    // END OF GRID CONTAINER
+}
+// END OF MEDIA QUERY (1150PX)

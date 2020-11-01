@@ -1,26 +1,54 @@
-nav ul {
-    display: flex;
+// CREATION OF NAVIGATION BAR
+nav {
+    .sideMenu {
+        display: flex;
+    }
+    li {
+        list-style: none;
+        padding: 75px 0;
+        text-align: center;
+        a {
+            font-size: 2rem;
+            line-height: 2.9rem;
+            letter-spacing: 1px;
+            font-weight: 700;
+            padding: 10px 20px;
+        }
+        a:hover, a:focus {
+            color: $colorYellow;
+            transition: all 0.5s;
+        }
+    }
 }
 
-nav li {
-    list-style: none;
-    padding: 75px 0;
-    text-align: center;
-}
-
-nav a {
-    font-size: 2rem;
-    line-height: 2.9rem;
-    letter-spacing: 1px;
-    font-weight: 700;
-    padding: 10px 20px;
-}
-
-nav a:hover {
-    color: $colorYellow;
-    transition: all 0.5s;
-}
-
+// CREATION OF YELLOW BAR BELOW ACTIVE PAGE
 .navCurrentPage {
     box-shadow: 0 21px 0 -18px $colorYellow;
+}
+
+// HAMBURGER MENU CREATION 
+.fas,
+.fa-bars {
+    font-size: 4rem;
+}
+
+input[type="checkbox"]:checked ~ ul.sideMenu {
+    right: 0;  
+}
+
+input[type="checkbox"]:checked + label[for="toggle"] {
+    right: -30%;
+    transition: all 0.5s;
+} 
+
+input[type="checkbox"] {
+    display: none; 
+}
+
+label[for="toggle"] {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: $colorWhite;
+    z-index: -1;
 }

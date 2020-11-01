@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="../styles/style.css">
     <!-- Google Fonts - JosefinSans & Barlow -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap"
@@ -14,61 +14,81 @@
     <script src="https://kit.fontawesome.com/e8e5081168.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<!-- CONTACT PAGE FOR PROJECT 2 - BEN SARJEANT @ JUNO COLLEGE -->
 
-    
-<header class="headerContact">
-    <div class="wrapper">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../blog/index.html">Blog</a></li>
-                <li><a href= "#" class="navCurrentPage">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Get in touch</h1>
-    </div>
-</header>
+<body>  
+    <!-- START OF HEADER SECTION FOR CONTACT PAGE -->
+    <header class="headerContact">
+
+        <!-- START OF WRAPPER -->
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="toggle" name="toggle" />
+                <label for="toggle"><i class="fas fa-bars"></i></label>
+                <ul class="sideMenu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href= "#" class="navCurrentPage">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Get in touch</h1>
+
+        </div>
+        <!-- END OF WRAPPER -->
+
+    </header>
+    <!-- END OF HEADER SECTION-->
 
 
-<main>
+    <!-- START OF SOCIALS AND GET IN TOUCH FORM SECTION -->
+    <main class="infoSocialSec">
+        <!-- START OF WRAPPER AND FLEX CONTAINER -->
+        <div class="wrapper flexContainerSocials">
 
-    <section class="infoSocials">
-        <a href=""><i class="fab fa-facebook-f"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-whatsapp"></i></a>
+            <!-- START OF SOCIAL INFORMATION SECTION -->
+            <section class="infoSocials">
+                <div class="infoSocialIcons">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                </div>
 
-        <p>info@email.com</p>
-        <p>123-456-7890</p>
-        <p>123 Queen Street WEst, Unit 10</p>
-        <p>Toronto, Ontario</p>
-        <p>M6V2D5</p>
-    </section>
+                <p>info@email.com</p>
+                <p>123-456-7890</p>
+                <p>123 Queen Street West, Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M6V2D5</p>
+            </section>
+            <!-- END OF SOCIAL INFORMATION SECTION -->
 
-    <section class="contactForm">     
-        <form action="submit">
-            <fieldset>
-                <label for="name" class="srOnly">Name</label>
-                <input type="name" name="" id="" placeholder="Name">
-                
-                <label for="email" class="srOnly">Email</label>
-                <input type="email" name="" id="" placeholder="Email address">
-                
-                <label for="message" class="srOnly">Message</label>
-                <input type="text" name="" id="" cols=10 rows=10 placeholder="Comment">
-                
-                <button type="button" value="Post Comment">Subscribe</button>
+            <!-- START OF GET IN TOUCH FORM -->
+            <fieldset class="contactForm imgBoxShadowRight">
+                <form action="submit" class="wrapper">
+                    <label for="name" class="srOnly">Email</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+
+                    <label for="email" class="srOnly">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email address">
+
+                    <label for="message" class="srOnly">Message</label>
+                    <input type="text" name="message" id="message" placeholder="Message">
+
+                    <a href="" class="button formSubmit">Submit</a>
+                </form>
             </fieldset>
-        </form>
-    </section>
+            <!-- END OF GET IN TOUCH FORM -->
 
-</main>
+        </div>
+        <!-- END OF WRAPPER AND FLEX CONTAINER -->
 
-<footer>
-    <p>Copyright 2020 Juno College</p>
-</footer>
+    </main>
+    <!-- END OF SOCIALS AND GET IN TOUCH FORM SECTION -->
+
+    <footer>
+        <p>Copyright 2020 Juno College</p>
+    </footer>
 
 </body>
 </html>

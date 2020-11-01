@@ -1,0 +1,53 @@
+// FORMS STYLING SHEET
+// REMOVING BORDER FROM FIELDSET
+fieldset {
+    border: none;
+}
+
+// FORM STYLING DISPLAYED AS GRID 
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 200px;
+    gap: 20px;   
+    padding: 0 80px;
+
+    input {
+        background-color: $colorPine;
+        color: $colorWhite;
+    }
+
+    #name, #email {
+        border: none;
+        border-bottom: 2px solid $colorYellow;
+        padding-left: 25px;
+    }
+
+    #message {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        border: 2px solid $colorYellow;
+        padding: 0 0 150px 25px;
+    }
+
+    // FORM SUBMIT BUTTON
+    .formSubmit {
+        grid-column: 1/ span 2;
+        grid-row: 3;
+        margin-bottom: 50px;
+    }
+}
+
+// SPECIFIC GET IN TOUCH FORM STYLING
+.contactForm {
+    width: 60%;
+    background-color: $colorAlmstBlck;
+    position: relative;
+    bottom: 150px;
+    right: 50px;
+    padding-top: 50px;
+    input[type=text], input[type=email] {
+        background-color: $colorAlmstBlck;
+    }
+}
+

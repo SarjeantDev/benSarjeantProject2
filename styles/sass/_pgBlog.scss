@@ -1,123 +1,93 @@
+//--------- BLOG PAGE STYLES ---------
+// HEADER STYLES 
 .headerBlog {
     background-image: url(../assets/blog-header.jpg);
-    nav ul li:first-child {
-        padding-left: 0;
-    }
 }
 
+// MAIN GRID CONTAINER 
 .blogGridContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 75px;
     background-color: $colorPine;
 }
 
-
-.blogSideBarContent {
-    margin: 50px 0 0 100px;
-    background-color: $colorAlmstBlck;
-    padding: 0 25px;
-    width: 50%;
-}
-
+// START OF SIDE BAR STYLES 
 .blogSideBarImg {
-    position: relative;
-    bottom: 50px;
-    right: 50px;
-    // box-shadow: 13.5px 0 $colorAlmstBlck, 0 20px $colorPine;
-    // margin-top: 50px;
-}
-
-.blogSideBarList {
-    padding-bottom: 30px;
-    li {
-        list-style-type: disc;
-        list-style-position: inside;
-        padding: 0;
+    margin-top: 50px;
+    height: 433px;
+    width: 100%;
+    img {
+        box-shadow: 35px 0 $colorAlmstBlck;
     }
 }
 
+.blogSideBarContent {
+    margin-left: 100px;
+    background-color: $colorAlmstBlck;
+    padding: 0 25px;
+    width: 390px;
+    .blogSideBarList {
+        padding-bottom: 30px;
+        li {
+            list-style-type: disc;
+            list-style-position: inside;
+            padding: 0;
+        }
+    }
+}
+// END OF SIDE BAR STYLES 
+
+
+// START OF BLOG CONTENT STYLES 
 .blogContent {
-    grid-column: 2 / span 4;
+    grid-column: 2 / span 3;
     h2 {
         color: $colorYellow;
     }
+    .blogContentBorder {
+        padding: 60px 0 80px 60px;
+        border-left: 5px solid $colorYellow;
+        border-bottom: 5px solid $colorYellow;
+    }
+    .blogContentImg img {
+        margin-bottom: -150px;
+        text-align: right;
+        width: 100%;
+        position: relative;
+        bottom: 200px;
+        right: 45px;
+    }
+    .blogContentText {
+        padding-right: 60px;
+    }
 }
+// END OF BLOG CONTENT STYLES 
 
-.blogContentText2 {
-    padding-right: 60px;
-    position: relative;
-}
-
-.blogContentImg {
-    text-align: right;
-}
-
-.blogContentImg img {
-    text-align: right;
-    width: 100%;
-    position: relative;
-    bottom: 200px;
-    right: 45px;
-}
-
-.blogContentText {
-    padding: 60px 0 80px 60px;
-    border-left: 5px solid $colorYellow;
-    border-bottom: 5px solid $colorYellow;
-}
-
+// START OF BLOG COMMENT STYLES
 .blogComments {
     padding: 0 80px;
     .blogCommentImg {
-        width: 20%;
+        width: 15%;
         img {
-            padding: 40px 40px 40px 0;
+            width: 100%;
+            max-width: 130px;
         }
     }
     .blogCommentContent {
+        padding-left: 20px;
         width: 80%;
     }
 }
 
-
+// BOLDING OF DATE ABOVE COMMENT TEXT 
 .blogComments p:nth-of-type(1) {
     color: $colorYellow;
     font-weight: bold;
     padding-bottom: 10px;
 }
+// END OF BLOG COMMENT STYLES
 
+// FORM STYLING FOUND IN _forms.scss 
 
-
-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50px 200px;
-    gap: 20px;   
-    padding: 0 80px;
-}
-
-form input {
-    background-color: $colorPine;
-    color: $colorWhite;
-}
-
-#name, #email {
-    border: none;
-    border-bottom: 2px solid $colorYellow;
-    padding-left: 25px;
-}
-
-#message {
-    grid-column: 1 / span 2;
-    grid-row: 2;
-    border: 2px solid $colorYellow;
-    padding: 0 0 150px 25px;
-}
-
-.formGridItem4 {
-    grid-column: 1/ span 2;
-    grid-row: 3;
-    margin-bottom: 50px;
-}
-
+// END OF CONTENT STYLES 

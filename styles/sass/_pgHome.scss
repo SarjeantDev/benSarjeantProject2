@@ -1,22 +1,26 @@
-/* HEADER STYLES FOR HOME PAGE */
+//--------- HOME PAGE STYLES --------
+// HEADER STYLES FOR HOME PAGE
 .headerMain {
     background-image: url(../assets/home-header.jpg);
+    background-position: left;
     span {
         color: $colorAlmstBlck;
         background-color: $colorWhite;
-        padding-top: 5px;
+        padding-top: 15px;
     }
 }
 
 .mainHomeImg {
     position: relative;
     text-align: right;
-    height: 450px;
-    bottom: 100px;
+    height: 510px;
+    bottom: 20px;
+    min-width: 420px;
 }
-/* END OF HEADER STYLES FOR HOME PAGE */
+// END OF HEADER STYLES FOR HOME PAGE
 
-/* START OF MAIN SECTION STYLES */
+
+// START OF MAIN SECTION STYLES - location/community/blog/getintouch
 .informationSec {
     background-color: $colorPine;
     .gridContainer {
@@ -34,11 +38,12 @@
         }
     }
 
-    /* Icon Styles */
+    // Icon Styles
     .informIconContainer {
         width: 10%;
     }
 
+    // creation of yellow circle around icon
     .iconCircle {
         width: 45px;
         height: 45px;
@@ -50,26 +55,24 @@
         text-align: center;
     }
 }
+// END OF MAIN SECTION STYLES - location/community/blog/getintouch
 
 
-/* BLOG SECTION STYLES */
+// START OF BLOG SECTION STYLES - best burgers / try something ne
 .blogSection {
     background-color: $colorAlmstBlck;
-
     .gridContainer {
         display: grid;
         grid-template-columns: repeat(2 ,1fr);
         column-gap: 15%;
         row-gap: 20px;
     }
-
     .gridItem1 img {
         width:100%;
         position: relative;
         bottom: 50px;
         min-width: 400px;
     }
-
     .gridItem2 {
         h5 {
             padding-top: 50px;
@@ -78,14 +81,12 @@
             padding-right: 150px;
         }
     }
-
     .gridItem3 {
         text-align: right;
         p {
             padding-left: 150px;
         }
     }
-
     .gridItem4 {
         text-align: right;
         img {
@@ -96,9 +97,10 @@
         }
     }
 }
+// END OF BLOG SECTION STYLES - best burgers / try something ne
 
 
-/* CONTEST SECTION & ARTICLE SECTION */
+// START OF CONTEST SECTION & ARTICLE SECTION
 .contestSection, .articleSection { 
     background-color: $colorPine;
     text-align: center;
@@ -113,16 +115,16 @@
         background-color: $colorYellow;
     }
 
-    /* flex container for article section */
+    // flex container for article section
     .flexContainer {
-        flex-direction:row;
         flex-wrap: wrap;
         justify-content: space-evenly;
         .articleImg {
-            flex-basis: 30%;        
+            flex-basis: 30%;
+            align-self: center;        
             img {
-                width: auto;
-                height: 350px;
+                width: 100%;
+                height: auto;
             }
         }
         .articleContent {
@@ -137,22 +139,20 @@
         }
     }
 }
-/* END OF CONTEST SECTION & ARTICLE SECTION */
+// END OF CONTEST SECTION & ARTICLE SECTION
 
+
+// START OF BANNER SECTION
 .bannerSection {
     background-color: $colorPine;
     .bannerImg {
         width: 100%;
     }
 }
+// END OF BANNER SECTION
 
-.articleSection {
-    background-color: $colorPine;
-    .wrapper {
-        padding: 100px 0;
-    }
-}
 
+// START OF GALLERY SECTION
 .gallerySection {
     background-color: $colorAlmstBlck;
     .wrapper {
@@ -167,3 +167,4 @@
         }
     }
 }
+// END OF GALLERY SECTION

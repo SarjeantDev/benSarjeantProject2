@@ -14,136 +14,139 @@
     <script src="https://kit.fontawesome.com/e8e5081168.js" crossorigin="anonymous"></script>
 </head>
 
+<!-- BLOG PAGE FOR PROJECT 2 - BEN SARJEANT @ JUNO COLLEGE -->
+
 <body>
+    <!-- START OF BLOG HEADER SECTION W/ NAV -->
+    <header class="headerBlog">
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="toggle" name="toggle" />
+                <label for="toggle"><i class="fas fa-bars"></i></label>
+                <ul class="sideMenu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="#" class="navCurrentPage">Blog</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Blog</h1>
+        </div>
+    </header>
+    <!-- END OF BLOG HEADER SECTION W/ NAV -->
 
-<header class="headerBlog">
-    <div class="wrapper">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="#" class="navCurrentPage">Blog</a></li>
-                <li><a href="../contact/index.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Blog</h1>
-    </div>
-</header>
+    <main>
+        <!-- MAIN GRID CONTAINER FOR BOTH SIDEBAR AND MAIN SECTIONS -->
+        <div class="blogGridContainer">
 
-
-<main>
-    <div class="blogGridContainer">
-        <section class="blogSideBar">
-
-            <div class="blogSideBarContent">
-
-                    <div class="blogSideBarImg">
-                        <img src="../assets/blog-side-image.jpg" alt="">
-                    </div>
-                <h6>Featured Restaurants</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nam earum hic ducimus porro fugiat?</p>
-                    <h6>Recent Posts</h3>
-                        <ul class=blogSideBarList>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>
-                            <li>Lorem ipsum dolor sit</li>
-                        </ul>
-            </div>
-            <!-- END OF CONTENT DIV -->
-
-        </section>
-        <!-- END OF BLOG SIDE BAR -->
-
-
-        <section class="blogContent">
-
-
-            <div class="blogContentText">
-                <div class="blogContentImg">
-                    <img class="blogHomeImg imgBoxShadowLeft" src="../assets/blog-post-image.jpg" alt="waiter setting table">
-                </div>
-
-                <div class="blogContentText2">
-                    <h2>Employment Opportunities</h4>
-                        <p>Monday October 30, 2020 by Sarjeant</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti
-                            nesciunt. Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaque
-                            a.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti
-                            nesciunt.
-                            Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaque a.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti
-                            nesciunt.
-                            Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaque a.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti
-                            nesciunt.
-                            Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaque a.</p>
+            <!-- START OF SIDE BAR SECTION -->
+            <section class="blogSideBar">
+                <div class="blogSideBarImg">
+                    <img src="../assets/blog-side-image.jpg" alt="">
                 </div>
                 
-            </div>
-                       
-            <div class="blogComments">
-                <h3>Comments:</h3>
-                <ul>
-                    <li class="flexContainer">
-                        <div class="blogCommentImg">
-                            <img src="../assets/comment-1.jpg" alt="alis head shot">
-                        </div>
-                        
-                        <div class="blogCommentContent">
-                            <p>Tuesday Novemeber 1st, 2020 by Ali</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis, animi, praesentium,
-                                beatae sapiente qui ab quis ad expedita aspernatur aliquid eius mollitia repellendus iure aut
-                                tempora consequuntur laboriosam. Blanditiis?</p>
-                        </div>
+                <!-- START OF SIDEBAR CONTENT DIV -->
+                <div class="blogSideBarContent">
+                    <h6>Featured Restaurants</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nam earum hic ducimus porro fugiat?</p>
+                    <h6>Recent Posts</h3>
+                    <ul class=blogSideBarList>
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Lorem ipsum dolor sit</li>
+                    </ul>
+                </div>
+                <!-- END OF SIDEBAR CONTENT DIV -->
 
-                    </li>
-
-                    <li class="flexContainer">
-                        <div class="blogCommentImg">
-                            <img src="../assets/comment-2.jpg" alt="lisas head shot">
-                        </div>
-                        
-                        <div class="blogCommentContent">
-                            <p>Tuesday Novemeber 2nd, 2020 by Lisa</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus voluptate veritatis soluta
-                                nobis vel, tenetur, nam, magnam numquam facere atque excepturi ullam quia eius. Exercitationem
-                                voluptas possimus similique totam.</p>
-                        </div>
-
-                    </li>
-                </ul>
-            </div>
-
-                <!-- FORM NEEDED HERE -->
-                <!-- need to learn more -->
-                <form action="submit" class="wrapper">
-
-                    <label for="name" class="srOnly">Email</label>
-                    <input type="text" name="name" id="name" placeholder="Name">
-
-                    <label for="email" class="srOnly">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email">
+            </section>
+            <!-- END OF SIDE BAR SECTION -->
 
 
-                    <label for="message" class="srOnly">Email</label>
-                    <input type="text" name="message"  id="message" placeholder="What should we call you?">
+            <!-- START OF BLOG CONTENT -->
+            <section class="blogContent">
 
-                    <a href="" class="button formGridItem4">Post Comment </a>
+                <!-- DIV TO CREATE YELLOW BORDER-->
+                <div class="blogContentBorder">
+                    <div class="blogContentImg">
+                        <img class="imgBoxShadowLeft" src="../assets/blog-post-image.jpg" alt="waiter setting table">
+                    </div>
+                    
+                    <!-- START OF BLOG PARAGRAPH/TEXT -->
+                    <div class="blogContentText">
+                        <h2>Employment Opportunities</h4>
+                        <p>Monday October 30, 2020 by Sarjeant</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti nesciunt. Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaquea.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti nesciunt. Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaque a.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti nesciunt. Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaque a.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut repellendus inventore porro corrupti nesciunt. Culpa tempora rem debitis iure, nisi eos nesciunt fugiat repellendus saepe veniam voluptas itaque a.</p>
+                    </div>
+                    <!-- END OF BLOG PARAGRAPH/TEXT -->
+                    
+                </div>
+                <!-- END OF YELLOW BORDER DIV -->
+                
+                <!-- START OF BLOG COMMENTS -->
+                <div class="blogComments">
+                    <h3>Comments:</h3>
+                    <ul>
+                        <!-- BLOG COMMENT #1 -->
+                        <li class="flexContainer">
+                            <div class="blogCommentImg">
+                                <img src="../assets/comment-1.jpg" alt="alis head shot">
+                            </div>
+                            
+                            <div class="blogCommentContent">
+                                <p>Tuesday Novemeber 1st, 2020 by Ali</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis, animi, praesentium, beatae sapiente qui ab quis ad expedita aspernatur aliquid eius mollitia repellendus iure aut tempora consequuntur laboriosam. Blanditiis?</p>
+                            </div>
+                        </li>
+                        <!-- END OF BLOG COMMENT #1 -->
 
-                </form>
+                        <!-- BLOG COMMENT #2 -->
+                        <li class="flexContainer">
+                            <div class="blogCommentImg">
+                                <img src="../assets/comment-2.jpg" alt="lisas head shot">
+                            </div>
+                            
+                            <div class="blogCommentContent">
+                                <p>Tuesday Novemeber 2nd, 2020 by Lisa</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus voluptate veritatis soluta nobis vel, tenetur, nam, magnam numquam facere atque excepturi ullam quia eius. Exercitationem voluptas possimus similique totam.</p>
+                            </div>
+                        </li>
+                        <!-- END OF BLOG COMMENT #2 -->
+                    </ul>
+                </div>
+                <!-- END OF BLOG COMMENTS -->
 
-            
+                <!-- FIELDSET TO CONTAIN FORM -->
+                <fieldset>
+                    <form action="submit" class="wrapper">
+                        <label for="name" class="srOnly">Email</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                    
+                        <label for="email" class="srOnly">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    
+                        <label for="message" class="srOnly">Email</label>
+                        <input type="text" name="message" id="message" placeholder="Comment">
+                    
+                        <a href=""class="button formSubmit">Post Comment</a>
+                    </form>
+                </fieldset>
+                <!-- END OF FORM CONTAINER -->
+
+            </section>
+            <!-- END OF BLOG CONTENT SECTION-->
+
         </div>
+        <!-- END OF GRID CONTAINER-->
 
-        </section>
+    </main>
 
-    </div>
-</main>
+    <footer>
+        <p>Copyright 2020 Juno College</p>
+    </footer>
 
-<footer>
-    <p>Copyright 2020 Juno College</p>
-</footer>
 </body>
 </html>

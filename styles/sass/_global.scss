@@ -1,3 +1,4 @@
+// GLOBAL STYLES 
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@ a {
 html {
     font-size: 62.5%;
     color: $colorWhite;
+    overflow-x:hidden;
 }
 
 h1, h2, h3, h4, h5, h6, button, nav, .button {
@@ -39,32 +41,35 @@ p, form, .blogSideBarList li {
     margin: 0 auto;
 }
 
-
 .flexContainer {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* global header styles */
+// GLOBAL HEADER STYLES
 header {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     min-height: 80vh;
     width: 100%;
 }
 
+// BOX SHADOW CREATION THROUGH USE OF MIXINS
 .imgBoxShadowRight {
     @include imgBoxShadow(20px);
 }
 
 .imgBoxShadowLeft {
-    @include imgBoxShadow(-20px)
+    @include imgBoxShadow(-20px);
 }
 
+// BUTTON CREATION THROUGH USE OF MIXINS
 .button {
-    @include button()
+    @include button();
 }
-.button:hover {
+.button:hover,
+.button:focus {
     color: $colorWhite;
     background-color: $colorBlack;
     transition: all 0.3s;

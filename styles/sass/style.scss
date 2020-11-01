@@ -1,14 +1,14 @@
+// UTIL IMPORTS
 @import 'setup';
 @import 'colors';
 @import 'typography';
 @import 'mixins';
 @import 'global';
-@import 'forms';
 @import 'nav';
+@import 'forms';
 @import 'footer';
 
-
-/* Page Imports */
+// PAGE IMPORTS 
 @import 'pgHome';
 @import 'pgBlog';
 @import 'pgContact';

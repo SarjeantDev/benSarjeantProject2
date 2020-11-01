@@ -1,3 +1,45 @@
+//--------- CONTACT US PAGE STYLES --------
+// HEADER STYLES FOR CONTACT US PAGE
 .headerContact {
     background-image:url(../assets/contact-header.jpg);
+    min-height: 60vh;
+    h1 {
+        width: 100%;
+    }
 }
+
+// START OF STYLES FOR MAIN CONTENT
+.infoSocialSec {
+    background-color: $colorPine;
+
+    // FLEX CONTAINER FOR SOCIALS AND FORM
+    .flexContainerSocials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .infoSocials {
+        padding-top: 100px;
+        width: 30%;
+        // SOCIAL ICON STYLES
+        .infoSocialIcons {
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                font-size: 2rem;
+                padding-right: 20px;
+                color: $colorYellow;
+            }
+        }
+        p:nth-of-type(1) {
+            padding: 20px 0;
+        }
+        p {
+            padding: 0;
+        }
+    }
+}
+
+
+

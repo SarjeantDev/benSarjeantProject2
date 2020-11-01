@@ -1,16 +1,20 @@
+// MIXIN STYLE SHEET
+// BOX SHADOW CREATION - JUST HAVE TO SET THE X-AXIS
 @mixin imgBoxShadow($offX, $offY: 20px, $color: $colorYellow) {
     box-shadow: $offX $offY $color;
 }
 
+// BUTTON CREATION - EITHER YELLOW OR ALMOST BLACK
 @mixin button(
         $backColor: $colorYellow, 
         $fontColor: $colorAlmstBlck, 
         $padding: 16px 16px 10px 16px,
         $fontSize: 22.4px,
-        $textAlign: center ){
-    background-color: $backColor;
-    color: $fontColor;
-    padding: $padding;
-    font-size: $fontSize;
-    text-align: $textAlign;
+        $textAlign: center )
+    {
+        background-color: $backColor;
+        color: $fontColor;
+        padding: $padding;
+        font-size: $fontSize;
+        text-align: $textAlign;
 }
